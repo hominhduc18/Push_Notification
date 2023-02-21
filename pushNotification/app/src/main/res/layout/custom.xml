@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:background="#609FE1">
+
+
+    <ImageView
+        android:id="@+id/img_custom_notification"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/bell"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/tv_time_custom"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@+id/img_custom_notification"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/tv_title_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.Compat.Notification.Title"
+            android:text="Title" />
+        <TextView
+            android:id="@+id/tv_message_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.Compat.Notification.Info"
+            android:text="Content"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_time_custom"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        style="@style/TextAppearance.Compat.Notification.Info"
+        android:text="12:12:34"/>
+
+</RelativeLayout>
